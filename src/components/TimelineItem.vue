@@ -1,5 +1,5 @@
 <template>
   <div>
-    Placeholder for a timeline item.
+    我是一个 Timeline item。
   </div>
 </template>

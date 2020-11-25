@@ -1,0 +1,29 @@
+@use 'sass:math';
+$num-of-masters: 7;
+$degree-of-gap: 360deg / $num-of-masters;
+$radius: 320px;
+
+#home-list-container {
+  position: relatve;
+  color: $text-color;
+
+  .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    a {
+      color: $text-color;
+    }
+
+    li {
+      position: absolute;
+    }
+
+    @for $i from 2 through $num-of-masters + 1 {
+      li:nth-child(#{$i}) {
+        transform: translate($radius * math.cos($degree-of-gap * ($i - 1)), $radius * math.sin($degree-of-gap * ($i - 1)));
+      }
+    }
+  }
+}
