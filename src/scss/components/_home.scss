@@ -6,4 +6,56 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .lightning {
+    .lightning-container {
+      width: 400px;
+      position: absolute;
+      top: 0;
+    }
+
+    @keyframes lightning {
+      from {
+        height: 0;
+      }
+
+      20% {
+        height: 100%;
+        opacity: 1;
+      }
+
+      30% {
+        height: 100%;
+      }
+
+      40% {
+        opacity: 0;
+      }
+      
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .lightning-container:nth-child(1) {
+      left: 5%;
+      animation-duration: 3s;
+    }
+
+    .lightning-container:nth-child(2) {
+      left: 35%;
+      animation-duration: 4s;
+    }
+
+    .lightning-container:nth-child(3) {
+      left: 75%;
+      animation-duration: 2.5s;
+    }
+
+    .lightning-container {
+      overflow: hidden;
+      animation-name: lightning;
+      animation-iteration-count: infinite;
+    }
+  }
 }
