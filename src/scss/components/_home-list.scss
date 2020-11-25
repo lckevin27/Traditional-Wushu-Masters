@@ -1,7 +1,7 @@
 @use 'sass:math';
-$num-of-masters: 7;
+$num-of-masters: 6;
 $degree-of-gap: 360deg / $num-of-masters;
-$radius: 320px;
+$radius: 350px;
 
 #home-list-container {
   position: relatve;
@@ -14,15 +14,45 @@ $radius: 320px;
     
     a {
       color: $text-color;
+      padding: 3% 0;
+      
+      b {
+        font-weight: 700;
+        font-size: 130%;
+      }
+
+      transition: 0.3s;
+
+      &:hover {
+        border-bottom: 3px solid $text-color;
+      }
     }
 
     li {
       position: absolute;
     }
 
+    li:nth-child(1) {
+      display: block;
+      background: url(../assets/master-ma.gif);
+      background-size: cover;
+      height: 300px;
+      width: 400px;
+    }
+
     @for $i from 2 through $num-of-masters + 1 {
+      $offset-hor: $radius * math.cos($degree-of-gap * ($i - 1));
+      $offset-ver: $radius * math.sin($degree-of-gap * ($i - 1));
+
+      $rand-hor: math.random() + 1;
+      $rand-ver: math.random(50);
+
+      @if $offset-ver < 0 {
+        $rand-ver: math.random(50) * (-1);
+      }
+
       li:nth-child(#{$i}) {
-        transform: translate($radius * math.cos($degree-of-gap * ($i - 1)), $radius * math.sin($degree-of-gap * ($i - 1)));
+        transform: translate($rand-hor * $offset-hor, $rand-ver + $offset-ver);
       }
     }
   }
