@@ -1,16 +1,21 @@
 <template>
-  <div>
-    <TimelineItem/>
+  <div class="timeline">
+    <a href="/" class="backToHome">回到主页</a>
+    <Intro/>
+    <TimelineSection/>
+    <img class="background-img" src="@/assets/timeline-background/mabaoguo-background.png" alt="Ma Baoguo">
   </div>
 </template>
 
 <script>
-import TimelineItem from '@/components/TimelineItem.vue'
+import Intro from '@/components/Intro.vue'
+import TimelineSection from '@/components/TimelineSection.vue'
 
 export default {
   name: 'Timeline',
   components: {
-    TimelineItem
+    TimelineSection,
+    Intro
   }
 }
 </script>

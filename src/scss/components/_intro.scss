@@ -1,0 +1,41 @@
+.intro-section {
+  width: 100%;
+  margin-top: 50px;
+
+  p.title {
+    font-size: 200%;
+
+    span.name {
+      font-size: 120%;
+      font-weight: 700;
+    }
+  }
+
+  .intro-text {
+    padding: 5% 10%;
+    margin-top: 50px;
+    border: 8px solid $text-color;
+    border-radius: 10px;
+    position: relative;
+    text-align: left;
+
+    .life-tag {
+      border-radius: 100%;
+      background-color: $text-color;
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 50px;
+      left: -54px;
+
+      p {
+        color: $bg-color;
+        font-weight: 700;
+        font-size: 120%;
+      }
+    }
+  }
+}

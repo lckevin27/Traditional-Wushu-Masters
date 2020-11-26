@@ -1,0 +1,27 @@
+.timeline {
+  min-height: 100vh;
+  background-color: $bg-color;
+  
+
+  padding: 3% 25%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  a.backToHome {
+    color: $text-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px 80px;
+    font-size: 150%;
+    font-weight: 700;
+  }
+
+  .background-img {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+  }
+}
