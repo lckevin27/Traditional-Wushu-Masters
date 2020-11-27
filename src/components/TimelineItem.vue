@@ -3,7 +3,7 @@
       <div class="timeline-content">
         <h3 class="date">{{ tlc.date }}</h3>
         <h1>{{ tlc.tlTitle }}</h1>
-        <p>{{ tlc.tlText }}</p>
+        <p v-html="tlc.tlText"></p>
       </div>
     </li>
 </template>
