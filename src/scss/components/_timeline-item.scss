@@ -17,27 +17,36 @@
     border-radius: 10px;
     margin-bottom: 20px;
   }
+
   ul li:last-child {
     margin-bottom: 0;
   }
+
+  .timeline-content {
+    z-index: 1;
+  }
+
   .timeline-content h1 {
     font-weight: 500;
     font-size: 25px;
     line-height: 30px;
     margin-bottom: 10px;
   }
+
   .timeline-content p {
     text-align: left;
     font-size: 16px;
     line-height: 30px;
     font-weight: 300;
   }
+
   .timeline-content .date {
     font-size: 12px;
     font-weight: 300;
     margin-bottom: 10px;
     letter-spacing: 2px;
   }
+
   @media only screen and (min-width: 768px) {
     &:before {
       content: "";

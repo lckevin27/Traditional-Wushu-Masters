@@ -1,9 +1,9 @@
 <template>
   <div class="timeline">
-    <a href="/" class="backToHome">回到主页</a>
+    <a href="/" class="backToHome">◀ 回到主页</a>
     <Intro/>
     <TimelineSection/>
-    <img class="background-img" src="@/assets/timeline-background/mabaoguo-background.png" alt="Ma Baoguo">
+    <img class="background-img" v-bind:src="require(`@/assets/timeline-background/${$route.params.name}.png`)" v-bind:alt="`${$route.params.name}`">
   </div>
 </template>
 

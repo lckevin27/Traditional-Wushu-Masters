@@ -3,7 +3,7 @@
       <p class="title">{{ allMasters[$route.params.name].title }} <span class="name">{{ $route.params.name }}</span></p>
       <div class="intro-text">
         <div class="life-tag"><p>人物生平</p></div>
-        {{ allMasters[$route.params.name].intro }}
+        <p v-html="allMasters[$route.params.name].intro"></p>
       </div>
     </div>
 </template>
