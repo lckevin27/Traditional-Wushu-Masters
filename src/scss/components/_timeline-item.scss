@@ -100,11 +100,15 @@
 
     img {
       width: 100%;
+      height: 200px;
+      object-fit: cover;
+      object-position: top;
     }
 
     p {
       font-size: 80%;
       font-style: italic;
+      text-align: center;
     }
   }
 }

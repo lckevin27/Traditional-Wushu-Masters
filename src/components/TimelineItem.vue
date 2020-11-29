@@ -10,6 +10,14 @@
 
 <script>
 export default {
-  props: ['tlc']
+  props: ['tlc'],
+  mounted () {
+    const imgs = document.querySelectorAll('div.media img')
+    for (let i = 0; i < imgs.length; i++) {
+      imgs[i].addEventListener('click', (e) => {
+        imgs[i].style.height = '100%'
+      })
+    }
+  }
 }
 </script>
