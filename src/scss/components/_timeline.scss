@@ -1,3 +1,5 @@
+$nav-color: #999;
+
 .timeline {
   min-height: 100vh;
   background-color: $bg-color;
@@ -5,6 +7,47 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  .scrolling-nav {
+    font-size: 80%;
+    position: fixed;
+    left: 50px;
+    top: 200px;
+    text-align: left;
+
+    a {
+      color: $nav-color;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 0;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 90%;
+      background-color: $nav-color;
+    }
+
+    ul li::before {
+      content: "";
+      position: absolute;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background-color: $nav-color;
+      top: 0px;
+      transform: translate(-50%, 50%);
+      left: -30px;
+    }
+
+    ul li {
+      clear: left;
+      transform: translateX(30px);
+      margin: 20px 0;
+    }
+  }
 
   a.backToHome {
     color: $text-color;
