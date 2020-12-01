@@ -34,7 +34,7 @@ export default {
           this.curNum = this.navList[this.curNum + 1] ? this.curNum + 1 : this.curNum
         }
       } else {
-        if (this.y < this.coordList[this.curNum] + 10) {
+        if (this.y < this.coordList[this.curNum] + 5) {
           this.unhighlight()
           this.navList[this.curNum].style.color = '#FFF'
           this.curNum = this.navList[this.curNum - 1] ? this.curNum - 1 : this.curNum
@@ -46,6 +46,11 @@ export default {
       this.navList.forEach(item => {
         item.style.color = '#999'
       })
+    },
+    setNavPos: function () {
+      const nav = document.getElementsByClassName('scrolling-nav')[0]
+      const top = Math.floor(window.innerHeight / 2 - nav.clientHeight / 2)
+      nav.style.top = `${top}px`
     }
   },
   data: function () {
@@ -58,6 +63,7 @@ export default {
     }
   },
   mounted () {
+    this.setNavPos()
     window.addEventListener('scroll', this.onScroll)
     this.coordList.push(document.getElementById('人物生平').getBoundingClientRect().top + window.scrollY)
     const timelineItems = document.getElementsByClassName('timeline-content')
