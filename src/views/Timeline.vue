@@ -51,6 +51,11 @@ export default {
       const nav = document.getElementsByClassName('scrolling-nav')[0]
       const top = Math.floor(window.innerHeight / 2 - nav.clientHeight / 2)
       nav.style.top = `${top}px`
+    },
+    hideImages: function (imgs) {
+      imgs.forEach(item => {
+        item.style.display = 'none'
+      })
     }
   },
   data: function () {
@@ -78,6 +83,25 @@ export default {
         }
       })
     })
+    const images = document.querySelectorAll('.media img')
+    const lightbox = document.createElement('div')
+    lightbox.style.position = 'fixed'
+    lightbox.style.zIndex = '10'
+    lightbox.style.paddingTop = '100px'
+    lightbox.style.left = '0'
+    lightbox.style.top = '0'
+    lightbox.style.height = '100%'
+    images.forEach((item, index) => {
+      const image = document.createElement('img')
+      image.src = item.src
+      image.style.maxHeight = '90vh'
+      image.style.display = 'none'
+      lightbox.appendChild(image)
+      item.addEventListener('click', () => {
+        image.style.display = 'block'
+      })
+    })
+    document.getElementById('人物生平').appendChild(lightbox)
   },
   computed: mapGetters(['allMasters'])
 }
