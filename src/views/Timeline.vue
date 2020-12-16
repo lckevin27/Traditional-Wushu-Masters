@@ -8,7 +8,7 @@
       </ul>
     </div>
     <Intro id="人物生平"/>
-    <TimelineSection/>
+    <TimelineSection id="timeline-section"/>
     <img class="background-img" v-bind:src="require(`@/assets/timeline-background/${$route.params.name}.png`)" v-bind:alt="`${$route.params.name}`">
   </div>
 </template>
@@ -51,11 +51,6 @@ export default {
       const nav = document.getElementsByClassName('scrolling-nav')[0]
       const top = Math.floor(window.innerHeight / 2 - nav.clientHeight / 2)
       nav.style.top = `${top}px`
-    },
-    hideImages: function (imgs) {
-      imgs.forEach(item => {
-        item.style.display = 'none'
-      })
     }
   },
   data: function () {
@@ -86,22 +81,45 @@ export default {
     const images = document.querySelectorAll('.media img')
     const lightbox = document.createElement('div')
     lightbox.style.position = 'fixed'
-    lightbox.style.zIndex = '10'
-    lightbox.style.paddingTop = '100px'
+    lightbox.style.zIndex = '100'
+    lightbox.style.paddingTop = '5vh'
     lightbox.style.left = '0'
     lightbox.style.top = '0'
     lightbox.style.height = '100%'
+    lightbox.style.width = '100%'
+    lightbox.style.display = 'none'
+    lightbox.style.backgroundColor = 'black'
     images.forEach((item, index) => {
+      const close = document.createElement('span')
+      const txtNode = document.createTextNode('X')
+      close.appendChild(txtNode)
       const image = document.createElement('img')
+      close.style.color = '#FFF'
+      close.style.position = 'absolute'
+      close.style.top = '10px'
+      close.style.right = '25px'
+      close.style.fontSize = '35px'
+      close.style.display = 'none'
       image.src = item.src
+      image.style.position = 'relative'
       image.style.maxHeight = '90vh'
       image.style.display = 'none'
+      image.style.margin = 'auto'
+      image.style.zIndex = '100'
+      lightbox.appendChild(close)
       lightbox.appendChild(image)
       item.addEventListener('click', () => {
+        close.style.display = 'block'
+        lightbox.style.display = 'block'
         image.style.display = 'block'
       })
+      close.addEventListener('click', () => {
+        close.style.display = 'none'
+        image.style.display = 'none'
+        lightbox.style.display = 'none'
+      })
     })
-    document.getElementById('人物生平').appendChild(lightbox)
+    document.getElementById('timeline-section').appendChild(lightbox)
   },
   computed: mapGetters(['allMasters'])
 }
