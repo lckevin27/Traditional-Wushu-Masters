@@ -91,14 +91,16 @@ export default {
     lightbox.style.backgroundColor = 'black'
     images.forEach((item, index) => {
       const close = document.createElement('span')
-      const txtNode = document.createTextNode('X')
+      const txtNode = document.createTextNode('×')
       close.appendChild(txtNode)
       const image = document.createElement('img')
+      close.style.cursor = 'pointer'
       close.style.color = '#FFF'
       close.style.position = 'absolute'
       close.style.top = '10px'
       close.style.right = '25px'
-      close.style.fontSize = '35px'
+      close.style.fontSize = '45px'
+      close.style.fontWeight = '700'
       close.style.display = 'none'
       image.src = item.src
       image.style.position = 'relative'
