@@ -3,8 +3,8 @@
     <router-link to="/" class="backToHome">◀ 回到主页</router-link>
     <div class="scrolling-nav">
       <ul>
-        <li><a href='#人物生平'>人物生平</a></li>
-        <li v-for="tlc in allMasters[$route.params.name].timelineContents" v-bind:key="tlc.tlTitle"><a v-bind:href='`#${tlc.tlTitle}`'>{{ tlc.tlTitle }}</a></li>
+        <li><a v-on:click="goto('人物生平')">人物生平</a></li>
+        <li v-for="tlc in allMasters[$route.params.name].timelineContents" v-bind:key="tlc.tlTitle"><a v-on:click="goto(tlc.tlTitle)">{{ tlc.tlTitle }}</a></li>
       </ul>
     </div>
     <Intro id="人物生平"/>
@@ -51,6 +51,10 @@ export default {
       const nav = document.getElementsByClassName('scrolling-nav')[0]
       const top = Math.floor(window.innerHeight / 2 - nav.clientHeight / 2)
       nav.style.top = `${top}px`
+    },
+    goto (id) {
+      const element = document.getElementById(id)
+      element.scrollIntoView()
     }
   },
   data: function () {

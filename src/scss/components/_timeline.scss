@@ -18,6 +18,7 @@ $nav-color: #999;
 
     a {
       color: $nav-color;
+      cursor: pointer;
     }
 
     &:before {
