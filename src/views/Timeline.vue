@@ -34,10 +34,11 @@ export default {
           this.curNum = this.navList[this.curNum + 1] ? this.curNum + 1 : this.curNum
         }
       } else {
-        if (this.y < this.coordList[this.curNum] + 5) {
+        const temp = this.navList[this.curNum - 1] ? this.curNum - 1 : this.curNum
+        if (this.y < this.coordList[temp] + 5) {
           this.unhighlight()
-          this.navList[this.curNum].style.color = '#FFF'
-          this.curNum = this.navList[this.curNum - 1] ? this.curNum - 1 : this.curNum
+          this.navList[temp].style.color = '#FFF'
+          this.curNum = temp
         }
       }
       this.prevY = window.pageYOffset
@@ -72,7 +73,7 @@ export default {
     this.coordList.push(document.getElementById('人物生平').getBoundingClientRect().top + window.scrollY)
     const timelineItems = document.getElementsByClassName('timeline-content')
     timelineItems.forEach(item => {
-      this.coordList.push(item.getBoundingClientRect().top + window.scrollY - 30)
+      this.coordList.push(item.getBoundingClientRect().top + window.scrollY - window.innerHeight / 2)
     })
     this.navList = document.querySelectorAll('.scrolling-nav ul li a')
     this.navList.forEach((item, index) => {
