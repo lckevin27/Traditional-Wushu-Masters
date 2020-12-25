@@ -9,12 +9,30 @@
     width: 100%;
     margin-bottom: 80px;
 
-    .title {
+    h1 {
+      overflow: hidden;
+      text-align: center;
+    }
+    
+    h1:before,
+    h1:after {
+      background-color: $text-color;
+      content: "";
       display: inline-block;
-      font-size: 200%;
-      font-weight: 700;
-      border-bottom: 8px solid $text-color;
-      padding: 10px 15px;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 20%;
+    }
+    
+    h1:before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+    
+    h1:after {
+      left: 0.5em;
+      margin-right: -50%;
     }
   }
 }

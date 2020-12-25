@@ -1,7 +1,7 @@
 <template>
     <div class="timeline-section">
       <div class="title-wrap">
-        <p class="title">光辉岁月</p>
+        <h1>光辉岁月</h1>
       </div>
       <div class="timeline-container">
         <ul>

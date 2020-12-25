@@ -15,15 +15,16 @@
   .intro-text {
     padding: 5% 10%;
     margin-top: 50px;
-    background-color: $bg-color;
-    border: 8px solid $text-color;
+    background-color: #1e1f22;
+    // border: 3px solid $text-color;
     border-radius: 10px;
     position: relative;
     text-align: left;
 
     .life-tag {
       border-radius: 100%;
-      background-color: $text-color;
+      background-color: $bg-color;
+      border-left: $text-color 4px solid;
       position: absolute;
       height: 100px;
       width: 100px;
@@ -31,10 +32,10 @@
       justify-content: center;
       align-items: center;
       top: 30px;
-      left: -54px;
+      left: -51px;
 
       p {
-        color: $bg-color;
+        color: $text-color;
         font-weight: 700;
         font-size: 120%;
       }
