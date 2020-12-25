@@ -2,11 +2,25 @@ $nav-color: #999;
 
 .timeline {
   min-height: 100vh;
-  background-color: $bg-color;
   padding: 3% 25%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  nav {
+    width: 100%;
+    padding: 10px 20px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+
+    a.backToHome {
+      color: $text-color;
+      float: left;
+      font-size: 150%;
+      font-weight: 700;
+    }
+  }
 
   .scrolling-nav {
     font-size: 80%;
@@ -14,7 +28,6 @@ $nav-color: #999;
     left: 50px;
     top: 200px;
     text-align: left;
-
 
     a {
       color: $nav-color;
@@ -49,16 +62,6 @@ $nav-color: #999;
       transform: translateX(30px);
       margin: 20px 0;
     }
-  }
-
-  a.backToHome {
-    color: $text-color;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 40px 80px;
-    font-size: 150%;
-    font-weight: 700;
   }
 
   .background-img {

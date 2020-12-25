@@ -1,6 +1,8 @@
 <template>
   <div class="timeline">
-    <router-link to="/" class="backToHome">◀ 回到主页</router-link>
+    <nav>
+      <router-link to="/" class="backToHome">◀ 回到主页</router-link>
+    </nav>
     <div class="scrolling-nav">
       <ul>
         <li><a v-on:click="goto('人物生平')">人物生平</a></li>

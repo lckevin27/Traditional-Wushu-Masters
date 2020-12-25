@@ -35,4 +35,11 @@
       margin-right: -50%;
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    .title-wrap {
+      margin-bottom: 20px;
+      font-size: 70%;
+    }
+  }
 }

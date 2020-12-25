@@ -3,8 +3,40 @@
   margin-top: 50px;
   z-index: 1;
 
+  .title-wrap {
+    display: none;
+    width: 100%;
+
+    h1 {
+      overflow: hidden;
+      text-align: center;
+    }
+    
+    h1:before,
+    h1:after {
+      background-color: $text-color;
+      content: "";
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 20%;
+    }
+    
+    h1:before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+    
+    h1:after {
+      left: 0.5em;
+      margin-right: -50%;
+    }
+  }
+
   p.title {
     font-size: 200%;
+    margin-bottom: 50px;
 
     span.name {
       font-size: 120%;
@@ -14,7 +46,6 @@
 
   .intro-text {
     padding: 5% 10%;
-    margin-top: 50px;
     background-color: #1e1f22;
     // border: 3px solid $text-color;
     border-radius: 10px;
@@ -37,7 +68,27 @@
       p {
         color: $text-color;
         font-weight: 700;
-        font-size: 120%;
+        font-size: 110%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    p.title {
+      font-size: 170%;
+    }
+
+    .title-wrap {
+      display: block;
+      margin-bottom: 20px;
+      font-size: 70%;
+    }
+
+    .intro-text {
+      padding: 5% 20px;
+
+      .life-tag {
+        display: none;
       }
     }
   }
