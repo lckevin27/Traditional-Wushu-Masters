@@ -9,13 +9,13 @@
     width: 100%;
     margin-bottom: 80px;
 
-    h1 {
+    h2 {
       overflow: hidden;
       text-align: center;
     }
     
-    h1:before,
-    h1:after {
+    h2:before,
+    h2:after {
       background-color: $text-color;
       content: "";
       display: inline-block;
@@ -25,12 +25,12 @@
       width: 20%;
     }
     
-    h1:before {
+    h2:before {
       right: 0.5em;
       margin-left: -50%;
     }
     
-    h1:after {
+    h2:after {
       left: 0.5em;
       margin-right: -50%;
     }

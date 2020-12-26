@@ -1,8 +1,6 @@
 <template>
   <div class="timeline">
-    <nav>
-      <router-link to="/" class="backToHome">◀ 回到主页</router-link>
-    </nav>
+    <Navbar />
     <div class="scrolling-nav">
       <ul>
         <li><a v-on:click="goto('人物生平')">人物生平</a></li>
@@ -19,10 +17,12 @@
 import Intro from '@/components/Intro.vue'
 import TimelineSection from '@/components/TimelineSection.vue'
 import { mapGetters } from 'vuex'
+import Navbar from '../components/Navbar.vue'
 
 export default {
   name: 'Timeline',
   components: {
+    Navbar,
     TimelineSection,
     Intro
   },
