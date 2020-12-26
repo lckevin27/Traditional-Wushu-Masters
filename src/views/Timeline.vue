@@ -88,7 +88,7 @@ export default {
     const images = document.querySelectorAll('.media img')
     const lightbox = document.createElement('div')
     lightbox.style.position = 'fixed'
-    lightbox.style.zIndex = '100'
+    lightbox.style.zIndex = '10'
     lightbox.style.paddingTop = '5vh'
     lightbox.style.left = '0'
     lightbox.style.top = '0'
@@ -111,10 +111,12 @@ export default {
       close.style.display = 'none'
       image.src = item.src
       image.style.position = 'relative'
-      image.style.maxHeight = '90vh'
+      image.style.maxHeight = '80vh'
+      image.style.maxWidth = '90%'
+      image.style.top = '5vh'
       image.style.display = 'none'
       image.style.margin = 'auto'
-      image.style.zIndex = '100'
+      image.style.zIndex = '10'
       lightbox.appendChild(close)
       lightbox.appendChild(image)
       item.addEventListener('click', () => {
