@@ -1,59 +1,89 @@
 @use 'sass:math';
-$num-of-masters: 5;
-$degree-of-gap: 360deg / $num-of-masters;
-$radius: 350px;
 
 #home-list-container {
-  position: relatve;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
   color: $text-color;
+
+  .btn-open-list {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    cursor: pointer;
+    z-index: 15;
+
+    span {
+      font-size: 32px;
+    }
+  }
 
   .list {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    background: $bg-color;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(0px at 100% 100%);
+    -webkit-clip-path: circle(0px at 100% 100%);
+    transition: all 0.5s ease-out;
+    z-index: 11;
+
+    a.close-btn {
+      position: absolute;
+      right: 5%;
+      top: 5%;
+      font-size: 150%;
+    }
     
     a {
       color: $text-color;
-      padding: 3% 0;
       
       b {
         font-weight: 700;
         font-size: 130%;
       }
+    }
+  }
 
-      transition: 1s;
+  .list.open {
+    background-color: $text-color;
+    clip-path: circle(2500px at 100% 100%);
+    -webkit-clip-path: circle(2500px at 100% 100%);
 
-      &:hover {
-        border-bottom: 5px solid $text-color;
-        font-size: 120%;
+    a {
+      color: $bg-color;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .list {
+      clip-path: circle(0px at 50% 0%);
+      -webkit-clip-path: circle(0px at 50% 0%);
+    }
+
+    .list.open {
+      clip-path: circle(1000px at 50% 0%);
+      -webkit-clip-path: circle(1000px at 50% 0%);
+    }
+
+    .btn-open-list {
+      right: 50%;
+      top: 10%;
+      bottom: unset;
+      transform: translateX(50%);
+
+      img {
+        width: 24px;
       }
-    }
 
-    li {
-      position: absolute;
-    }
-
-    li:nth-child(1) {
-      display: block;
-      background: url(../assets/master-ma.gif);
-      background-size: cover;
-      height: 300px;
-      width: 400px;
-    }
-
-    @for $i from 2 through $num-of-masters + 1 {
-      $offset-hor: $radius * math.cos($degree-of-gap * ($i - 1));
-      $offset-ver: $radius * math.sin($degree-of-gap * ($i - 1));
-
-      $rand-hor: math.random() + 1;
-      $rand-ver: math.random(50);
-
-      @if $offset-ver < 0 {
-        $rand-ver: math.random(50) * (-1);
-      }
-
-      li:nth-child(#{$i}) {
-        transform: translate($rand-hor * $offset-hor, $rand-ver + $offset-ver);
+      span {
+        font-size: 24px;
       }
     }
   }

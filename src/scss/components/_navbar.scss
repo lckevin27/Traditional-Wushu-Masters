@@ -1,4 +1,6 @@
 #navbar-wrapper {
+  z-index: 10;
+
   a {
     color: $text-color;
   }
@@ -25,10 +27,10 @@
       display: none;
 
       div {
-        width: 35px;
-        height: 5px;
+        width: 30px;
+        height: 4px;
         background-color: $text-color;
-        margin: 6px 0;
+        margin: 5px 0;
       }
     }
   }
@@ -71,7 +73,7 @@
     font-weight: 700;
   }
   
-  #sidenav .closebtn {
+  #sidenav .close-btn {
     position: absolute;
     top: 0;
     right: 0;

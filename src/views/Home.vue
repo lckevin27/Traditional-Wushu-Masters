@@ -5,6 +5,7 @@
       <div class="lightning-container"><img src="@/assets/lightning/bolt-2.png" alt="lightning image 2"></div>
       <div class="lightning-container"><img src="@/assets/lightning/bolt-3.png" alt="lightning image 3"></div>
     </div>
+    <div class="main-img"></div>
     <HomeList />
   </div>
 </template>

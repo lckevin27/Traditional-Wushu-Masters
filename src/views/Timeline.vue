@@ -17,7 +17,7 @@
 import Intro from '@/components/Intro.vue'
 import TimelineSection from '@/components/TimelineSection.vue'
 import { mapGetters } from 'vuex'
-import Navbar from '../components/Navbar.vue'
+import Navbar from '@/components/Navbar.vue'
 
 export default {
   name: 'Timeline',
