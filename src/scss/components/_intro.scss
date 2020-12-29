@@ -47,10 +47,10 @@
   .intro-text {
     padding: 5% 10%;
     background-color: #1e1f22;
-    // border: 3px solid $text-color;
     border-radius: 10px;
     position: relative;
     text-align: left;
+    z-index: 2;
 
     .life-tag {
       border-radius: 100%;
