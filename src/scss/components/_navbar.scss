@@ -1,29 +1,41 @@
 #navbar-wrapper {
   z-index: 10;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 30px 40px;
 
   a {
     color: $text-color;
   }
 
   .navbar {
-    width: 100%;
-    padding: 10px 20px;
-    position: absolute;
-    top: 20px;
-    left: 40px;
+    a {
+      vertical-align: middle;
+    }
+
+    a.logo {
+      text-align: center;
+      display: none;
+      max-height: 32px;
+
+      img {
+       height: 32px;
+      }
+    }
 
     a.back-to-home {
       color: $text-color;
-      float: left;
       font-size: 150%;
       font-weight: 700;
+      float: left;
     }
 
     a.open-nav {
       display: block;
-      float: left;
       font-size: 150%;
       font-weight: 700;
+      float: left;
       display: none;
 
       div {
@@ -81,9 +93,13 @@
   }
 
   @media only screen and (max-width: 1060px) {
+    position: fixed;
+    background-color: $bg-color;
+
     .navbar {
-      top: 10px;
-      left: 0px;
+      a.logo {
+        display: inline-block;
+      }
 
       a.back-to-home {
         display: none;
@@ -97,6 +113,8 @@
   }
 
   @media only screen and (max-width: 768px) {
+    padding: 15px;
+
     p.title {
       font-size: 170%;
     }

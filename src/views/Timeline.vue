@@ -107,22 +107,20 @@ export default {
       close.style.top = '10px'
       close.style.right = '25px'
       close.style.fontSize = '45px'
-      close.style.fontWeight = '700'
       close.style.display = 'none'
       image.src = item.src
-      image.style.position = 'relative'
       image.style.maxHeight = '80vh'
       image.style.maxWidth = '90%'
-      image.style.top = '5vh'
       image.style.display = 'none'
-      image.style.margin = 'auto'
       image.style.zIndex = '10'
       lightbox.appendChild(close)
       lightbox.appendChild(image)
       item.addEventListener('click', () => {
         close.style.display = 'block'
-        lightbox.style.display = 'block'
         image.style.display = 'block'
+        lightbox.style.display = 'flex'
+        lightbox.style.justifyContent = 'center'
+        lightbox.style.alignItems = 'center'
       })
       close.addEventListener('click', () => {
         close.style.display = 'none'
@@ -132,6 +130,11 @@ export default {
     })
     document.getElementById('timeline-section').appendChild(lightbox)
   },
-  computed: mapGetters(['allMasters'])
+  computed: mapGetters(['allMasters']),
+  watch: {
+    $route (to, from) {
+      window.scrollTo(0, 0)
+    }
+  }
 }
 </script>

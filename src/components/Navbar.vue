@@ -12,6 +12,7 @@
         <div></div>
         <div></div>
       </a>
+      <router-link to="/" class="logo"><img src="@/assets/chuanwudashi.png" alt="logo" /></router-link>
     </div>
   </div>
 </template>
@@ -22,6 +23,11 @@ import { mapGetters } from 'vuex'
 export default {
   name: 'Navbar',
   computed: mapGetters(['allMasters']),
+  data: function () {
+    return {
+      y: window.pageYOffset
+    }
+  },
   methods: {
     openNav () {
       document.getElementById('sidenav').style.width = '300px'
@@ -29,7 +35,21 @@ export default {
     },
     closeNav () {
       document.getElementById('sidenav').style.width = '0px'
+    },
+    displayBorderOnScroll () {
+      if (window.innerWidth <= 1060) {
+        this.y = window.pageYOffset
+        const navbarWrapper = document.getElementById('navbar-wrapper')
+        if (this.y !== 0) {
+          navbarWrapper.style.borderBottom = 'solid 1px #555'
+        } else {
+          navbarWrapper.style.borderBottom = 'none'
+        }
+      }
     }
+  },
+  mounted () {
+    window.addEventListener('scroll', this.displayBorderOnScroll)
   }
 }
 </script>
