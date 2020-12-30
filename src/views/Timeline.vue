@@ -37,7 +37,7 @@ export default {
         }
       } else {
         const temp = this.navList[this.curNum - 1] ? this.curNum - 1 : this.curNum
-        if (this.y < this.coordList[temp] + 5) {
+        if (this.y < this.coordList[temp]) {
           this.unhighlight()
           this.navList[temp].style.color = '#FFF'
           this.curNum = temp
@@ -57,7 +57,11 @@ export default {
     },
     goto (id) {
       const element = document.getElementById(id)
-      element.scrollIntoView()
+      console.log(element)
+      // element.scrollIntoView()
+      // setTimeout(function () {
+      //   window.scrollTo(0, window.pageYOffset + 1)
+      // }, 1000)
     },
     updateCoordList () {
       this.coordList = []
@@ -72,6 +76,10 @@ export default {
           if (this.curNum !== index) {
             this.curNum = index
           }
+          window.scrollTo(0, this.coordList[index])
+          setTimeout(function () {
+            window.scrollTo(0, window.pageYOffset + 1)
+          }, 1)
         })
       })
     },
