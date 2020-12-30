@@ -58,6 +58,68 @@ export default {
     goto (id) {
       const element = document.getElementById(id)
       element.scrollIntoView()
+    },
+    updateCoordList () {
+      this.coordList = []
+      this.coordList.push(document.getElementById('人物生平').getBoundingClientRect().top + window.scrollY)
+      const timelineItems = document.getElementsByClassName('timeline-content')
+      timelineItems.forEach(item => {
+        this.coordList.push(item.getBoundingClientRect().top + window.scrollY - window.innerHeight / 2)
+      })
+      this.navList = document.querySelectorAll('.scrolling-nav ul li a')
+      this.navList.forEach((item, index) => {
+        item.addEventListener('click', () => {
+          if (this.curNum !== index) {
+            this.curNum = index
+          }
+        })
+      })
+    },
+    updateLightbox () {
+      const images = document.querySelectorAll('.media img')
+      const lightbox = document.createElement('div')
+      lightbox.style.position = 'fixed'
+      lightbox.style.zIndex = '10'
+      lightbox.style.paddingTop = '5vh'
+      lightbox.style.left = '0'
+      lightbox.style.top = '0'
+      lightbox.style.height = '100%'
+      lightbox.style.width = '100%'
+      lightbox.style.display = 'none'
+      lightbox.style.backgroundColor = 'black'
+      images.forEach((item, index) => {
+        const close = document.createElement('span')
+        const txtNode = document.createTextNode('×')
+        close.appendChild(txtNode)
+        const image = document.createElement('img')
+        close.style.cursor = 'pointer'
+        close.style.color = '#FFF'
+        close.style.position = 'absolute'
+        close.style.top = '10px'
+        close.style.right = '25px'
+        close.style.fontSize = '45px'
+        close.style.display = 'none'
+        image.src = item.src
+        image.style.maxHeight = '80vh'
+        image.style.maxWidth = '90%'
+        image.style.display = 'none'
+        image.style.zIndex = '10'
+        lightbox.appendChild(close)
+        lightbox.appendChild(image)
+        item.addEventListener('click', () => {
+          close.style.display = 'block'
+          image.style.display = 'block'
+          lightbox.style.display = 'flex'
+          lightbox.style.justifyContent = 'center'
+          lightbox.style.alignItems = 'center'
+        })
+        close.addEventListener('click', () => {
+          close.style.display = 'none'
+          image.style.display = 'none'
+          lightbox.style.display = 'none'
+        })
+      })
+      document.getElementById('timeline-section').appendChild(lightbox)
     }
   },
   data: function () {
@@ -72,69 +134,15 @@ export default {
   mounted () {
     this.setNavPos()
     window.addEventListener('scroll', this.onScroll)
-    this.coordList.push(document.getElementById('人物生平').getBoundingClientRect().top + window.scrollY)
-    const timelineItems = document.getElementsByClassName('timeline-content')
-    timelineItems.forEach(item => {
-      this.coordList.push(item.getBoundingClientRect().top + window.scrollY - window.innerHeight / 2)
-    })
-    this.navList = document.querySelectorAll('.scrolling-nav ul li a')
-    this.navList.forEach((item, index) => {
-      item.addEventListener('click', () => {
-        if (this.curNum !== index) {
-          this.curNum = index
-        }
-      })
-    })
-    const images = document.querySelectorAll('.media img')
-    const lightbox = document.createElement('div')
-    lightbox.style.position = 'fixed'
-    lightbox.style.zIndex = '10'
-    lightbox.style.paddingTop = '5vh'
-    lightbox.style.left = '0'
-    lightbox.style.top = '0'
-    lightbox.style.height = '100%'
-    lightbox.style.width = '100%'
-    lightbox.style.display = 'none'
-    lightbox.style.backgroundColor = 'black'
-    images.forEach((item, index) => {
-      const close = document.createElement('span')
-      const txtNode = document.createTextNode('×')
-      close.appendChild(txtNode)
-      const image = document.createElement('img')
-      close.style.cursor = 'pointer'
-      close.style.color = '#FFF'
-      close.style.position = 'absolute'
-      close.style.top = '10px'
-      close.style.right = '25px'
-      close.style.fontSize = '45px'
-      close.style.display = 'none'
-      image.src = item.src
-      image.style.maxHeight = '80vh'
-      image.style.maxWidth = '90%'
-      image.style.display = 'none'
-      image.style.zIndex = '10'
-      lightbox.appendChild(close)
-      lightbox.appendChild(image)
-      item.addEventListener('click', () => {
-        close.style.display = 'block'
-        image.style.display = 'block'
-        lightbox.style.display = 'flex'
-        lightbox.style.justifyContent = 'center'
-        lightbox.style.alignItems = 'center'
-      })
-      close.addEventListener('click', () => {
-        close.style.display = 'none'
-        image.style.display = 'none'
-        lightbox.style.display = 'none'
-      })
-    })
-    document.getElementById('timeline-section').appendChild(lightbox)
+    this.updateCoordList()
+    this.updateLightbox()
   },
-  computed: mapGetters(['allMasters']),
-  watch: {
-    $route (to, from) {
-      window.scrollTo(0, 0)
-    }
-  }
+  updated () {
+    window.scrollTo(0, 0)
+    this.setNavPos()
+    this.updateCoordList()
+    this.updateLightbox()
+  },
+  computed: mapGetters(['allMasters'])
 }
 </script>

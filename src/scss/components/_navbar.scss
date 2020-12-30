@@ -24,19 +24,11 @@
       }
     }
 
-    a.back-to-home {
-      color: $text-color;
-      font-size: 150%;
-      font-weight: 700;
-      float: left;
-    }
-
     a.open-nav {
       display: block;
       font-size: 150%;
       font-weight: 700;
       float: left;
-      display: none;
 
       div {
         width: 30px;
@@ -99,10 +91,6 @@
     .navbar {
       a.logo {
         display: inline-block;
-      }
-
-      a.back-to-home {
-        display: none;
       }
     
       a.open-nav {
