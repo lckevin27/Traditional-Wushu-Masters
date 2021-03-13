@@ -67,43 +67,43 @@ export const mastersEN = {
   },
   'Lei Lei': {
     title: 'Thunder Taiji',
-    intro: '雷雷，本命魏雷，出生于北京，自称「雷公太极」，成都太极文化养生培训基地总教练。从七八岁开始就接触太极拳，其启蒙老师是杨氏太极第四代传人。在练习太极拳的同时，雷雷也曾学习过拳击、散打、柔道、泰拳和跆拳道，且曾热爱健身。',
+    intro: 'Lei Lei was born in Beijing, he called himself “Thunder Taiji”. He was the head coach of Chengdu’s Taiji Training Academy. He started to practice Taiji with his master, who is the 4th generation successor of the Yang-Style Taiji. Lei Lei also practice boxing, Sanda, Judo, Muay Thai and Taekwondo.',
     timelineContents: [
       {
-        date: '2015 年 2 月 23 日',
-        tlTitle: '央视《体验真功夫》杨氏太极拳播出',
-        tlText: '2015 年 2 月 23 日，央视 CCTV4 中文国际频道的《体验真功夫》栏目组来到了四川成都青城山上的一个「太极文化养生培训基地」，初次拜访了杨氏太极拳传人雷雷。在节目嘉宾与雷雷进行了一番关于太极拳的口头探讨后，热爱中国传统武术的老外嘉宾 Eric 便想试一试雷雷的太极功夫，于是他们便进行了以下视频中的「激烈战斗」：<div class="media"><video src="./video/雷雷/雷雷Eric.mp4" controls></video><p>《体验真功夫》雷雷 Eric 交手</p></div> 徒手战斗后，雷雷又与 Eric 来了一场「雨伞械斗」来演示太极拳中的器械功夫：<div class="media"><video src="./video/雷雷/雨伞械斗.mp4" controls></video><p>《体验真功夫》雷雷 Eric「雨伞械斗」 </p></div>而后，雷雷又使用了一只西瓜来展示了太极拳超越科学的「透劲」：一掌下去，西瓜皮毫发无损，而内部却早已被内力震得变质：<div class="media"><video src="./video/雷雷/拍西瓜.mp4" controls></video><p>《体验真功夫》雷雷拍西瓜 </p></div>随后，雷雷又和师父罗宇一起，展示了太极中又一个超越科学的绝技：「雀不飞」。即使用「化劲」让手中的鸟无法借力起飞：<div class="media"><video src="./video/雷雷/雀不飞.mp4" controls></video><p>《体验真功夫》雷雷与师父罗宇展示「雀不飞」 </p></div>通过这样的一期精彩的节目，广大观众无一不为太极拳的神器赞叹。除了本期节目的主人公雷雷以及其师父罗宇外，我们还必须要记住三个嘉宾名字：「实战派武术家」赵冀龙、记者颜飞以及热爱中国传统武术的外国小伙儿 Eric Couillard，你们值得一张 S 卡！'
+        date: '23 Feb 2015',
+        tlTitle: 'TV Show "Experience Real Kung Fu"',
+        tlText: 'On 23 Feb 2015, China’s CCTV4 (China Central Television Channel 4) broadcasted a TV show called “Experience Real Kung Fu”. The show visited Lei Lei, a successor of the Yang-Style Taiji. At the beginning, the crew had some discussion with Lei about Taiji, then Eric, a foreigner member of the crew, who was an amateur Kung Fu practitioner, challenged Lei to a combat battle: <div class="media"><video src="./video/雷雷/雷雷Eric.mp4" controls></video><p>Lei vs. Eric</p></div>  They then again had a “weapon fighting” with umbrellas: <div class="media"><video src="./video/雷雷/雨伞械斗.mp4" controls></video><p>Eric vs. Lei: Umbrellas Fighting </p></div> After 2 rounds of combats, Lei showed a couple of incredible Taiji skills that science could not explain, including: Lei slapped a watermelon and it seemed like nothing happened, but when they opened that watermelon, it could be clearly seen that it was damaged inside: <div class="media"><video src="./video/雷雷/拍西瓜.mp4" controls></video><p>Lei Slapping Watermelon </p></div> Lei and his master could even stop a bird from flying away while the birds were standing on their hands: <div class="media"><video src="./video/雷雷/雀不飞.mp4" controls></video><p>”Birds Won\'t Fly” </p></div>'
       },
       {
-        date: '2016 年 12 月 27 日',
-        tlTitle: '雷雷在微博称可单手破裸绞',
-        tlText: '2016 年 12 月 27 日，雷雷在微博称自己可以只手破解 MMA 中的「大杀器锁技」裸绞，并与徐某展开了争论。<div class="media"><img src="./img/雷雷/单手破裸绞.png"><p>雷雷单手破裸绞微博截图</p></div>'
+        date: '27 Dec 2016',
+        tlTitle: 'Escaping from Rear Naked Choke',
+        tlText: 'On 27 Dec 2016, Lei Lei claimed on his social network accuont that he could singlehandedly escape from Rear Naked Choke, the Brizilian Jiu-Jitsu\'s iconic technique with his Taiji technique. A Chinese MMA practitioner Xu Xiaodong doubted under the post and they had a big argument with each other. <div class="media"><img src="./img/雷雷/单手破裸绞.png"><p>Screenshot of Lei\'s Claim</p></div>'
       },
       {
-        date: '2017 年 4 月 27 日',
-        tlTitle: '徐某 20 秒 K.O. 雷雷',
-        tlText: '雷雷与徐某在微博上的争论后发展成更大的恩怨，徐某的联系方式甚至在全网流通（疑似通过雷雷之手流出），以致被骚扰。2017 年 4 月 27 日，双方进行了一次比武，徐某仅用不到 20 秒便将雷雷 K.O.，比赛结束。<div class="media"><video src="./video/雷雷/决战徐某.mp4" controls></video><p>徐某与雷雷比武视频</p></div>'
+        date: '27 Apr 2017',
+        tlTitle: 'Xu KO\'d Lei in 20 Seconds',
+        tlText: 'The argument between Lei and Xu developed further into a personal issue, Lei even exposed Xu\'s contacts to the public. On 27 Apr 2017, the 2 parties had a fight, and Xu knocked out Lei in less than 20 seconds time.<div class="media"><video src="./video/雷雷/决战徐某.mp4" controls></video><p>Xu KO\'d Lei in 20 Seconds</p></div>'
       },
       {
-        date: '2017 年 5 月 3 日',
-        tlTitle: '雷雷接受《局面》采访',
-        tlText: '在惨败徐某的几天后，雷雷接受了访谈节目《局面》记者王志安的采访。在采访中，雷雷解释称自己是「鞋太滑导致摔倒」而不是被徐某「击倒」。<div class="media"><video src="./video/雷雷/鞋底太滑.mp4" controls></video><p>徐某与雷雷比武视频</p></div>雷雷在采访中还说出了著名的「术高莫用」论：怕徐某出人命自己进派出所所以不敢使用「内家拳」。<div class="media"><video src="./video/雷雷/术高莫用.mp4" controls></video><p>雷雷「术高莫用」</p></div>另外，雷雷还谈到了之前央视《体验真功夫》节目中的「拍西瓜」桥段，他承认节目播出的西瓜变色是节目组提前往西瓜里打入了盐水的效果。但是他还称当时拍了两段视频，另一段是拍西瓜之后皮没事而内部的皮开裂了，可是自己向央视没有要到这一段视频，而最终播出了另一段。<div class="media"><video src="./video/雷雷/解释拍西瓜.mp4" controls></video><p>雷雷解释「拍西瓜」</p></div>'
+        date: '3 May 2017',
+        tlTitle: 'Lei Lei\'s Media Interview',
+        tlText: 'A few days after the defeat, Lei Lei accepted an interview to talk about the fight. During the interview, Lei claimed that he fell on the floor because his shoes were slippery, it was not that Xu knocked him out.  <div class="media"><video src="./video/雷雷/鞋底太滑.mp4" controls></video><p>”Slippery Shoes”</p></div>He also said that he suppressed his true skills and power because he did not want to go to jail for murdering Xu. <div class="media"><video src="./video/雷雷/术高莫用.mp4" controls></video><p>Lei’s Suppression of his SKills</p></div>They also talked about that TV show that made him famous, he explained that the watermelon slapping scene was fake, the inside looked damaged because the crew injected some salt water into the watermelon in advance. But he still claimed he had the capability of doing that. <div class="media"><video src="./video/雷雷/解释拍西瓜.mp4" controls></video><p>Lei Explaining Watermelon Slapping</p></div>'
       }
     ]
   },
   'Chen Xiaowang': {
     title: 'Lineage Holder of Chen-style Taijiquan',
-    intro: '陈小旺，男，国籍澳大利亚，1946 年 10 月 20 日出生于河南省温县陈家沟，是第一批国家级非物质文化遗产项目太极拳（陈氏太极拳）代表性传承人。<br><br>陈小旺自幼随父辈习武，精通陈氏太极拳理论、套路、器械、推手、散打。在承袭世代家传武学的基础上，继承、发展了陈氏太极拳。1980 年被河南省体委调入，从事专职武术训练和教学工作。1980 - 1982 年参加全国太极拳比赛，连续三年获金牌奖。1985 年代表中国队在西安的首届国际武术邀请赛中获太极拳冠军，曾 20 多次获重大比赛冠军，多次代表中国到日本、美国、新加坡等一百多个国家交流、访问。多次以其精妙绝伦太极功夫战胜和折服了不少前来挑战的武士和力士，为国家赢得了荣誉。多年来培养出了一大批国内外太极拳冠军和优秀太极拳手。辅导教授学生数万人次。',
+    intro: 'Chen Xiaowang, born in 20 Oct 1946, Australia citizen, the Lineage Holder of Chen-style Taijiquan. <br><br>Chen began to practice Taiji with his father when he was young, he mastered every aspect of Taiji and further developed it. Chen attended various national Taiji competitions and won 3 consecutive gold medals. He won more than 20 champions in his life. ',
     timelineContents: [
       {
-        date: '2012 年 10 月 1 日',
-        tlTitle: '湖南卫视《谁与争锋》太极VS大力士',
-        tlText: '2012 年 10 月 1 日，湖南卫视的晚间综艺节目《谁与争锋》播出了国庆特别放送：《亚洲首席大力士 VS. 任何人都推不动的太极宗师》。节目组请来了号称「中国大力士王」的大力士运动员龙武以及「太极宗师」陈小旺。节目中着重介绍了大力士的力量如何强大以及太极功夫如何稳如泰山，一场矛与盾的对决在两者之间展开：两人一共进行了三局，每局时长 1 分钟的比赛。如果在 1 分钟之内，大力士龙武能将太极宗师陈小旺推出圈外，则龙武获胜；反之则陈小旺获胜。<br>在进行了一番激烈的对抗后，龙武三局都未能将陈小旺推出圈外：<div class="media"><video src="./video/陈小旺/谁与争锋互推.mp4" controls></video><p>《谁与争锋》大力士 VS. 太极宗师</p></div> 鉴于本期节目实在太过精彩，全程无尿点，特将全片放出供大家观赏：<div class="media"><video src="./video/陈小旺/谁与争锋.mp4" controls></video><p>《谁与争锋》完整版</p></div>'
+        date: '1 Oct 2012',
+        tlTitle: 'Taiji VS. Professional Strongman',
+        tlText: 'On 1 Oct 2012, a TV program called "The Challenge: Taiji VS. Professional Strongman" was broadcast in one of the most popular TV channels in China. The program’s 2 opponents were Long Wu, “The King of China’s Strongmen” and Chen Xiaowang, one of the most famous Taiji masters. The rules of the competition between them basically were: the Taiji master would stand inside of a circle, and the strongman would have to push him out of that circle within 1 minutes, whoever won 2 out of 3 rounds would be the winner. The TV programs showed that the strongman could not push Chen out even though he had tried his best. <div class="media"><video src="./video/陈小旺/谁与争锋互推.mp4" controls></video><p>Taiji VS. Professional Strongman</p></div>'
       },
       {
         date: '2016 年 8 月 2 日',
-        tlTitle: '龙武微博承认节目造假',
-        tlText: '2016 年 8 月 2 日，当初「推不动」太极宗师陈小旺的大力士龙武发布微博，称「已经帮了太极那么多，我觉的够了。改为大力士正名了」、「以前的太极拳叫『拳』现在叫『太极体操』养身确实可以，至于实战，哈哈哈哈哈哈哈」疑似嘲讽太极鼓吹的实战性太滑稽。<div class="media"><img src="./img/陈小旺/龙武微博.png"><p>龙武发布微博</p></div>随后的几天到几个月内，龙武屡次在此微博下回复网友消息，回复内容包括「当年也是不得已而为之」、「当时我是尊重老前辈，后来发现陈先生（陈小旺）只是沽名钓誉之徒，才把真相说出来」等。他在回复中还揭露道：当时他只用了 5 秒钟的时间就将陈小旺推伤了，并且在椅子上坐了一个小时都起不来，最后录了个结尾加上开始的镜头在剪辑下变成了「每局 1 分钟的三局比赛」。<div class="media"><img src="./img/陈小旺/龙武对话1.png"><p>龙武微博回复</p></div><div class="media"><img src="./img/陈小旺/龙武对话2.png"><p>龙武微博回复</p></div><div class="media"><img src="./img/陈小旺/龙武对话3.png"><p>龙武微博回复</p></div>'
+        tlTitle: 'Strongman Admitted to Acting',
+        tlText: 'On 2 Aug 2016, Long wu, the stongman who participated the showed posted an article on his social network account, saying: "I have  done more than enough to help promote Taiji, it is time to clarify everything and wash away the embarrassment it brought to Professional Strongmen!", "Taiji used to be a kind of martial arts, but it is now another form of yoga, don\'t even try to use it in combats". <div class="media"><img src="./img/陈小旺/龙武微博.png"><p>Long Wu\'s Post</p></div> In the following months, Long Wu replied to some of the comments under this post, saying that "he was forced to do the show", "I respected Chen for his high profile, but I then found out he was such a liar, that is why I am telling the truth now". He also revealed that he injured Chen in 5 seconds as the competition started, and Chen had to sit on a chair for an hour. So the show’s crew ended up recording a short clip as the ending of the show. The clip was later edited with the 5 seconds recording mentioned before to become a competitive match. <div class="media"><img src="./img/陈小旺/龙武对话1.png"><p>Long Wu\'s Reply</p></div><div class="media"><img src="./img/陈小旺/龙武对话2.png"><p>Long Wu\'s Reply</p></div><div class="media"><img src="./img/陈小旺/龙武对话3.png"><p>Long Wu\'s Reply</p></div>'
       }
     ]
   },
@@ -114,7 +114,7 @@ export const mastersEN = {
       {
         date: '2008',
         tlTitle: 'CCTV Martial Arts Champion',
-        tlText: 'In the year of 2008, the “Undefeated General” won the CCTV (China Central Television) Martial Arts Champion. I have attached the replayers of 2 final matches in that competition below. Please try not to laugh.<div class="media"><video src="./video/王占军/康龙武林大会.mp4" controls></video><p>2 Final Fights of 2008\'s CCTV Martial Arts Championship</p></div>'
+        tlText: 'In the year of 2008, the "Undefeated General" won the CCTV (China Central Television) Martial Arts Champion. I have attached the replayers of 2 final matches in that competition below. Please try not to laugh.<div class="media"><video src="./video/王占军/康龙武林大会.mp4" controls></video><p>2 Final Fights of 2008\'s CCTV Martial Arts Championship</p></div>'
       },
       {
         date: '11 May 2017',
