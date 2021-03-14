@@ -9,59 +9,54 @@ export const mastersEN = {
         tlText: 'As Xu Xiaodong, a MMA practitioner, knocked out a Taiji master Lei Lei in a few seconds in 27 April 2017, Ma Baoguo published a 4000-character long article to condemn him for "making the whole Taiji world embarrassing". In this article, Ma said: “We have thousands of real Wushu masters in China who are living like normal people and don\'t want to show off their skills”, “I had been teaching Wushu overseas for many years, those foreigners never thought the MMA that you practiced were powerful. In their mind, our Chinese Traditional martial arts were much better than MMA.”<br><br>He also attached a video in the article, claiming it to be the footage that he beat Peter Irving, a European MMA champion in the UK, with his traditional skills that he had been practicing for more than 60 years. <div class="media"><video src="./video/马保国/马保国PeterIrving.mp4" controls></video><p>The So-Called Footage of Beating a MMA Champion</p></div>'
       },
       {
-        date: '2 June 2017',
+        date: '2 Jun 2017',
         tlTitle: 'Xu Challenge Ma Baoguo',
         tlText: 'A month after the ariticle published by Ma Baoguo, Xu Xiaodong decided to challenge Ma Baoguo to a fight.<div class="media"><img src="./img/马保国/徐某发起挑战.png"><p>Xu Responding the Ariticle</p></div>'
       },
       {
-        date: '6 June 2017',
+        date: '6 Jun 2017',
         tlTitle: 'Irving denied to be defeated by Ma',
         tlText: 'On 6 June 2017, Peter Irving, the "European MMA Champion" that Ma Baoguo claimed he defeated, posted his response to the video released by Ma on Facebook. <div class="media"><img src="./img/马保国/PeterIrving辟谣.png"><p>Peter Irving\'s Response</p></div> He claimed the video was a tribute to Ma Baoguo instead of a real combat footage and won\'t be released to the public. Irving was paid to act like that. <br><br>Irving also claimed that he could "put him to sleep without hittimg him".'
       },
       {
-        date: '2017 年 6 月 9 日',
-        tlTitle: '马保国应战徐某',
-        tlText: '同月 9 号，马保国再发布一则公告，接受徐某挑战。比武日期定于 6 月 26 日，地点为上海。<div class="media"><img src="./img/马保国/马保国应战.png"><p>徐某回应马保国公开信</p></div>'
+        date: '9 Jun 2017',
+        tlTitle: 'Ma Accepted Xu\'s Challenge',
+        tlText: 'On 9 June 2017, Ma annunced that he would accpet Xu\'s challenge, and the fight will take place in Shanghai on 26th of June. <div class="media"><img src="./img/马保国/马保国应战.png"><p>Ma Accepts Challenge from Xu</p></div>'
       },
       {
-        date: '2017 年 6 月 26 日',
-        tlTitle: '与徐某比武之日',
-        tlText: '6 月 26 日，比武双方马保国及徐某如约到达指定场地。当日下午 14 时 48 分，双方选手握手致意并签订协议，比武即将开始。两分钟后，场馆灯光突然被熄灭，有场地工作人员称比赛场地不合规，且没有进行批报，叫停即将开始的比武。徐某发言解释，并表示如场地不合规可以使用替代的方案。14 时 53 分，当地警方以「聚众打架」为由带走徐某问话，比武被迫取消。直到晚上 8 点，徐某才得以离开警局。<br><br>比武取消后，马保国接受了记者王志安的采访。在采访中，马保国称自己曾在 2009 年在师妹胳膊上试打了「朱砂掌」，在三年后再见到师妹时此「朱砂掌」留下的印记仍未完全消失。马保国还表明之前被徐某击败的太极雷雷「不懂实战」，并称「115 公斤的人也无法双手握住他的一个手指」、「太极拳比巴西柔术高明得多」，还表示自己可以「唱着歌破裸绞」。<br><br>马保国在采访中还展示了自己左手手掌上的一个肉球，后在电话采访声称这个球是他练出来的「太极球」，是他的「太极总开关」。<br><br>采访视频精华如下：<div class="media"><video src="./video/马保国/马保国局面采访.mov" controls></video><p>马保国接受王志安采访</p></div>'
+        date: '26 Jun 2017',
+        tlTitle: 'The Fight Day',
+        tlText: 'On 26 Jun 2017, the 2 opponents of the fight arrived at the venue. At 2:48pm, Ma and Xu signed the fight agreement and shook hands, the fight was about to begin. However, all the lights of the venue were turned off 2 minutes later. A staff of the venue claimed that the venue was not qualified and stopped the fight. At 2:53pm, Xu was arrested by local policemen for causing a public affray. He was not released until 8:00pm. <br><br>After the fight was cancelled, Ma accepted an interview. In the interview, Ma claimed that he once place a mark with his Taiji skill on a friend\'s hand, and the mark did not disappear when they met up again 3 years later. Ma also said that Lei, who was knocked out by Xu, did not understand Taiji a bit. Ma also claimed that "a person with 115 KG body weight will not be able to bend a finger of mine with his both hands", "Taiji is much better than Brazilian Jiu-Jitsu", "I can break out from a Rear Naked Choke while singing". <br><br>A compilation of the interview: <div class="media"><video src="./video/马保国/马保国局面采访.mov" controls></video><p>Ma\'s Interview</p></div>'
       },
       {
-        date: '2020 年 1 月',
-        tlTitle: '马保国发布「耗子尾汁」视频',
-        tlText: '2020 年 1 月，马保国发布了其著名视频，此视频日后成为了大量恶搞、「鬼畜」剪辑的素材。在视频中，马保国右眼青肿，他称有两个年轻人慕名而来向他寻求治疗颈椎疼痛的方法。他对年轻人说「在健身房练死劲儿是不管用的」，年轻人表示不服气后，马保国让他们用两个手来掰其手指头也没掰动，还称「200 多斤的英国大力士也掰不动」。然后马保国与两位年轻人中的一位展开了激烈的比武，并将年轻人的一套组合技全部防御下来，认为此时比武点到为止已结束，怎料年轻人发起了「偷袭」，所以致其右眼青肿。<br><br>自述视频如下：<div class="media"><video height="300" src="./video/马保国/马保国眼肿.mp4" controls></video><p>马保国眼肿自述视频</p></div>而在此视频发布以后，有人联系到了与马保国过招的「年轻人」，「年轻人」就对事件作出了回应，在回应中，「年轻人」表示，是马保国自己提出的过招并且先出手，当时基于本能的反击就打在了马保国的眼睛上造成了后来的淤青，并不是如马保国在视频中所说的「年轻人」先出手，这一套反击打出的组合技也并没有如马保国所说的被他「防出去了」。<div class="media"><img src="./img/马保国/年轻人微信记录.jpg"><p>「偷袭事件」中「年轻人」的回应</p></div>'
+        date: '17 May 2020',
+        tlTitle: 'KO\'d 3 Times by an Amateur Boxer',
+        tlText: 'On 17 May 2020, 3 year later after the cancelled fight with Xu. Ma Baoguo fought an 48-year-old amateur boxer in an event of martial arts conference. In this fight, Ma was knocked out 3 times in 30 seconds. <br><br>The fight footage: <div class="media"><video src="./video/马保国/马保国王庆民.mp4" controls></video><p>Ma Baoguo KO\'d 3 Times</p></div>'
       },
       {
-        date: '2020 年 5 月 17 日',
-        tlTitle: '对决王庆民：身败名裂',
-        tlText: '2020 年 5 月 17 日，马保国在山东淄博一场名为「演武堂之江湖十六」的搏击比赛中对阵年近 50 岁的民间武术爱好者王庆民，在 30 秒内被王庆民连续击倒 3 次，最后一次被 K.O. 在地昏迷两分钟。该视频在微博等社交平台疯传，马保国「一战成名」。<br><br>比赛视频如下：<div class="media"><video src="./video/马保国/马保国王庆民.mp4" controls></video><p>马保国被连续 K.O.</p></div>'
+        date: 'Nov 2020',
+        tlTitle: 'Ma\'s Video Parodies Started Trending',
+        tlText: 'On Nov 2020, some video parodies started trending on some of biggest video platforms and social networks in China. The parodies were based on the knockout clip and a few of other funny videos posted by Ma himself. This later turned into a rarer phenomenon, suddenly everyone was talking about Ma Baoguo.'
       },
       {
-        date: '2020 年 11 月',
-        tlTitle: '马保国恶搞视频开始流行',
-        tlText: '2020 年 11 月，以 Bilibili 为首的视频网站及社交媒体上开始大量出现各种基于马保国「耗子尾汁」视频、被王庆民 K.O. 录像以及「闪电五连鞭」等的再创作恶搞、「鬼畜」视频，马保国开始爆红。'
+        date: '15 Nov 2020',
+        tlTitle: 'Ma Announce His Retirement',
+        tlText: 'On 15 Nov 2020, Ma sent a post on his social network account, saying that he was already "back to live a normal live and got away from China\'s Martial Arts circle", seemed to be a retirement statement. <div class="media"><img src="./img/马保国/疑似隐退.jpeg"><p>Ma seemed to announce his retirement</p></div>'
       },
       {
-        date: '2020 年 11 月 15 日',
-        tlTitle: '发布微博，疑似隐退',
-        tlText: '2020 年 11 月 15 日，马保国在其官方微博发声，表示自己「已回归平静生活，远离武林是非圈子」，疑似隐退。<div class="media"><img src="./img/马保国/疑似隐退.jpeg"><p>马保国疑似隐退</p></div>'
+        date: '17 Nov 2020',
+        tlTitle: 'Ma Announced to Cast in a Movie',
+        tlText: 'Only 2 days after his retirement announcement, Ma claimed that he would cast in a new movie called "The Young Kung Fu King", at the end of the video, he again presented his self-created Taiji move: Thunder Whip Combination. This move was a very populter element in his video parody. <div class="media"><video height="300" src="./video/马保国/少年功夫王.mp4" controls></video><p>Ma Announced to Cast in a Moive</p></div>'
       },
       {
-        date: '2020 年 11 月 17 日',
-        tlTitle: '宣布参演电影《少年功夫王》拍摄',
-        tlText: '同月 17 日，仅在宣布「已回归平静生活」2 天后，马保国便发布新视频称自己将出演电影《少年功夫王》，并在视频中再次表演了绝技「闪电五连鞭」。<div class="media"><video height="300" src="./video/马保国/少年功夫王.mp4" controls></video><p>马保国宣布参演电影《少年功夫王》</p></div>'
+        date: '20 Nov 2020',
+        tlTitle: 'Accepted an Interview after His Defeat',
+        tlText: 'On 25 Nov 2020, Ma Baoguo accepted an interview to talk about his defeat for the first time. He said he was poisoned before the fight, and that caused his move to be slower that he couldn\'t defend his opponent\'s attacks. <div class="media"><video src="./video/马保国/新京报采访.mov" controls></video><p>Ma Baoguo\'s Interview</p></div>'
       },
       {
-        date: '2020 年 11 月 25 日',
-        tlTitle: '接受《新京报》采访',
-        tlText: '2020 年 11 月 25 日，马保国接受媒体《新京报》采访，谈了近期的事件。在采访中，马保国称他近期如此大的热度是来源于「中华民族对于传统功夫的热爱」，并再次解释自己是如何「打败」Peter Irving 并让他佩服得五体投地的，他还称 Peter Irving 后来的辟谣是「为了面子」。当记者问道：「既然您能打得过 Peter Irving，那为什么打不过业余的王庆民呢？」时，马保国回应称不知为何当天出手速度变慢，但在与一些「武林高手」进行讨论后，他们一致认为王庆民当天暗算（使用乙醚）了马保国。<div class="media"><video src="./video/马保国/新京报采访.mov" controls></video><p>马保国接受《新京报》采访片段</p></div>'
-      },
-      {
-        date: '2020 年 11 月 28 日',
-        tlTitle: '马保国开始遭到封杀',
-        tlText: '2020 年 11 月 28 日下午，官媒人民日报发文「马保国闹剧，该立刻收场了」，质疑马保国的炒作目的和「审丑」风气。<div class="media"><img src="./img/马保国/人民日报批马保国.jpeg"><p>人民日报批马保国</p></div>当晚，马保国恶搞视频爆红的发源地 Bilibili 网站的官方账号发布公告，将严格限制、审核及管理与马保国相关视频内容，防止被马保国利用以为自己牟利。<div class="media"><img src="./img/马保国/B站官方声明.jpg"><p>Bilibili 官方声明</p></div>截止到现在，在 Bilibili 搜索「马保国」、「五连鞭」等字样已不显示结果，马保国事件正式告一段落，马保国本人也成为了第一个被官方「封杀」的传武大师。'
+        date: '28 Nov 2020',
+        tlTitle: 'Ma Baoguo was banned on the Internet',
+        tlText: 'On 28 Nov 2020, People\'s Daily, one of the offcial newspaper of China\'s Central Committee published article, saying that all the drama about Ma Baoguo should be stopped here, we shouldn\'t give any more clout to Ma so he could make money from it. <div class="media"><img src="./img/马保国/人民日报批马保国.jpeg"><p>People\'s Daily Article about Ma Baoguo</p></div> At night, Bilibili, the biggest UCG video platform in China, where all the parodies started, announced that they would strictly censor all the videos that were relevant to Ma Baoguo.<div class="media"><img src="./img/马保国/B站官方声明.jpg"><p>Bilibili\'s Statement</p></div> If you go on Bilibili and try to search anything about Ma Baoguo, there will be no results shown, Ma has become the first ever Traditional Wushu Master to be banned in China.'
       }
     ]
   },

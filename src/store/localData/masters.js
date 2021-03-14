@@ -21,7 +21,7 @@ export const masters = {
       {
         date: '2017 年 6 月 9 日',
         tlTitle: '马保国应战徐某',
-        tlText: '同月 9 号，马保国再发布一则公告，接受徐某挑战。比武日期定于 6 月 26 日，地点为上海。<div class="media"><img src="./img/马保国/马保国应战.png"><p>徐某回应马保国公开信</p></div>'
+        tlText: '同月 9 号，马保国再发布一则公告，接受徐某挑战。比武日期定于 6 月 26 日，地点为上海。<div class="media"><img src="./img/马保国/马保国应战.png"><p>马保国接受徐某挑战</p></div>'
       },
       {
         date: '2017 年 6 月 26 日',
