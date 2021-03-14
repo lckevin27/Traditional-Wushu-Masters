@@ -2,7 +2,7 @@
   <div id="navbar-wrapper">
     <nav id="sidenav">
       <a href="javascript:void(0)" class="close-btn" v-on:click="closeNav()">&times;</a>
-      <router-link to="/en">Home</router-link>
+      <router-link to="/">Home</router-link>
       <router-link v-for="(master, index) in allMastersEN" v-bind:key="index" v-bind:to="`/en/timeline/${index}`" v-on:click="closeNav()">{{ index }}</router-link>
     </nav>
     <div class="navbar">

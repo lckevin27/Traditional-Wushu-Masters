@@ -1,7 +1,7 @@
 # Tradition Wushu Masters 传武大师
 
 ***
-Traditional Wushu Masters English Web Address - [chuanwudashi.com/en](http://chuanwudashi.com/en)
+Traditional Wushu Masters English Web Address - [chuanwudashi.com/](http://chuanwudashi.com/)
 
 This site was built under the background when video parodies about a so-called Tai-chi master Ma Baoguo were trending all over the Internet in China. The parodies were massively based on a video that the Wushu master was knocked out 3 times by an amateur boxer in a few minutes. Video can be seen here: [Tai Chi Master Ma Baoguo got KOed in less than 30 seconds](https://www.youtube.com/watch?v=94aQsvctFoI&has_verified=1&ab_channel=purportedland).
 

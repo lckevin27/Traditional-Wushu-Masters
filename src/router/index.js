@@ -6,7 +6,7 @@ import TimelineEN from '../views/en/TimelineEN.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/cn',
     name: 'Home',
     component: Home
   },
@@ -16,7 +16,7 @@ const routes = [
     component: Timeline
   },
   {
-    path: '/en',
+    path: '/',
     name: 'HomeEN',
     component: HomeEN
   },
